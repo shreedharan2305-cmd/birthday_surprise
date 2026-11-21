@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 70" width="80" height="70">
+  <defs>
+    <linearGradient id="wingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E1BEE7"/>
+      <stop offset="50%" stop-color="#CE93D8"/>
+      <stop offset="100%" stop-color="#F48FB1"/>
+    </linearGradient>
+  </defs>
+  <path d="M40,35 C35,15 15,0 2,12 C-6,20 2,42 25,40 C10,48 5,62 15,68 C25,72 35,55 40,42 Z" fill="url(#wingGrad)" opacity="0.92" stroke="#ffffff" stroke-width="2"/>
+  <path d="M40,35 C45,15 65,0 78,12 C86,20 78,42 55,40 C70,48 75,62 65,68 C55,72 45,55 40,42 Z" fill="url(#wingGrad)" opacity="0.92" stroke="#ffffff" stroke-width="2"/>
+  <ellipse cx="40" cy="38" rx="3.5" ry="16" fill="#6A1B9A"/>
+  <circle cx="40" cy="20" r="4" fill="#4A148C"/>
+  <path d="M39,18 Q32,8 26,10 M41,18 Q48,8 54,10" stroke="#4A148C" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+</svg>

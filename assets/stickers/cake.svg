@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="cakeGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FCE4EC"/>
+      <stop offset="50%" stop-color="#F8BBD0"/>
+      <stop offset="100%" stop-color="#F48FB1"/>
+    </linearGradient>
+    <linearGradient id="frosting" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#FFF5F8"/>
+    </linearGradient>
+  </defs>
+  <ellipse cx="60" cy="105" rx="50" ry="8" fill="#E8D5C4"/>
+  <ellipse cx="60" cy="103" rx="47" ry="7" fill="#FFF" stroke="#DAA520" stroke-width="1.5"/>
+  <rect x="22" y="70" width="76" height="32" rx="6" fill="url(#cakeGrad1)"/>
+  <path d="M22,70 Q30,82 38,70 Q46,84 54,70 Q62,82 70,70 Q78,85 86,70 Q93,80 98,70 L98,66 L22,66 Z" fill="url(#frosting)"/>
+  <rect x="35" y="46" width="50" height="24" rx="5" fill="#E1BEE7"/>
+  <path d="M35,46 Q43,56 50,46 Q58,58 65,46 Q73,56 80,46 Q83,52 85,46 L85,42 L35,42 Z" fill="url(#frosting)"/>
+  <rect x="44" y="28" width="4" height="14" fill="#FFD54F" rx="1.5"/>
+  <rect x="58" y="24" width="4" height="18" fill="#FF8A80" rx="1.5"/>
+  <rect x="72" y="28" width="4" height="14" fill="#80DEEA" rx="1.5"/>
+  <path d="M46,26 C43,21 44,17 46,14 C48,17 49,21 46,26 Z" fill="#FF9800"/>
+  <path d="M60,22 C57,16 58,12 60,9 C62,12 63,16 60,22 Z" fill="#FFC107"/>
+  <path d="M74,26 C71,21 72,17 74,14 C76,17 77,21 74,26 Z" fill="#FF9800"/>
+  <circle cx="42" cy="45" r="3" fill="#FF4081"/>
+  <circle cx="60" cy="43" r="3.5" fill="#DAA520"/>
+  <circle cx="78" cy="45" r="3" fill="#FF4081"/>
+</svg>

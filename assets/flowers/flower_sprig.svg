@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <path d="M15,85 Q45,65 75,25" stroke="#81C784" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+  <!-- Leaves -->
+  <path d="M35,70 Q20,60 28,52 Q42,60 35,70 Z" fill="#A5D6A7"/>
+  <path d="M55,50 Q70,42 64,32 Q48,40 55,50 Z" fill="#81C784"/>
+  <!-- Rose bloom -->
+  <circle cx="75" cy="25" r="16" fill="#F48FB1"/>
+  <circle cx="75" cy="25" r="12" fill="#F06292"/>
+  <circle cx="75" cy="25" r="7" fill="#E91E63"/>
+  <circle cx="75" cy="25" r="3" fill="#C2185B"/>
+</svg>
