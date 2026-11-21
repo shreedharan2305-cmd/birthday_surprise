@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Happy Birthday Nithya Priya! ❤️ | Hanuman's Surprise</title>
+  <meta name="description" content="A dreamy floral scrapbook birthday surprise website for Nithya Priya (Hanuman)">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Nunito:wght@400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient floating petals & sparkles canvas -->
+  <canvas id="ambient-canvas"></canvas>
+
+  <!-- Persistent Floating Music & Navigation Header -->
+  <header class="top-nav-bar">
+    <div class="nav-brand">
+      <span class="brand-flower">🌸</span>
+      <span class="brand-title">Hanuman's Birthday World</span>
+    </div>
+    <div class="nav-actions">
+      <button id="music-toggle-btn" class="nav-pill-btn" aria-label="Toggle Background Music">
+        <span class="music-icon" id="music-icon">🎵</span>
+        <span class="music-label" id="music-label">Music: Off</span>
+        <div class="sound-wave" id="sound-wave">
+          <span></span><span></span><span></span>
+        </div>
+      </button>
+      <div class="page-indicator" id="page-indicator">1 / 5</div>
+    </div>
+  </header>
+
+  <!-- Main Website Container -->
+  <main id="app-container">
+
+    <!-- ==============================================
+         PAGE 1: MAGICAL BIRTHDAY WELCOME
+         ============================================== -->
+    <section class="page-section active" id="page-welcome" data-page="1">
+      <div class="welcome-card scrapbook-paper">
+        <!-- Corner floral stickers -->
+        <img src="assets/flowers/flower_sprig.svg" alt="Flower sprig" class="corner-flower top-left">
+        <img src="assets/stickers/butterfly.svg" alt="Butterfly" class="corner-butterfly top-right">
+        
+        <!-- Washi tape decoration -->
+        <div class="washi-tape-strip tape-pink tape-center"></div>
+
+        <div class="welcome-badge">
+          <span class="badge-icon">🎂</span>
+          <span class="badge-text">Since 2017 – still tolerating each other!</span>
+        </div>
+
+        <h1 class="main-title glow-text">HAPPY BIRTHDAY, NITHYA PRIYA! ❤️</h1>
+        <p class="main-subtitle">Welcome to your little world of surprises!</p>
+
+        <!-- Birthday Cake Illustration -->
+        <div class="cake-container">
+          <img src="assets/stickers/cake.svg" alt="Birthday Cake" class="cake-illustration">
+          <div class="cake-sparkles">
+            <span class="sparkle s1">✨</span>
+            <span class="sparkle s2">⭐</span>
+            <span class="sparkle s3">✨</span>
+          </div>
+        </div>
+
+        <!-- Fun nostalgic memories department line -->
+        <div class="nostalgic-quote-box">
+          <div class="quote-stamp">TOP SECRET</div>
+          <p class="nostalgic-quote">
+            "Welcome to the memories department – established in 2017, powered by friendship, unlimited mokka jokes, and lifetime torture! 😂"
+          </p>
+        </div>
+
+        <!-- Action Button -->
+        <div class="cta-wrapper">
+          <button id="btn-open-surprise" class="btn-floral-magic">
+            <span class="btn-sparkle">✨</span>
+            <span class="btn-text">Open Your Surprise ❤️</span>
+            <span class="btn-sparkle">✨</span>
+          </button>
+          <p class="cta-hint">Tap with sound on for the best experience 🎶</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PAGE 2: INTERACTIVE LETTER FROM AN ENVELOPE
+         ============================================== -->
+    <section class="page-section" id="page-letter" data-page="2">
+      <div class="letter-screen-wrapper">
+        <div class="section-badge">
+          <span class="badge-star">💌</span>
+          <span>A Special Letter For You</span>
+        </div>
+
+        <!-- Interactive Envelope Area -->
+        <div class="envelope-container" id="envelope-container">
+          <!-- Floating stickers around envelope -->
+          <div class="floating-sticker f-sticker-1">🌸</div>
+          <div class="floating-sticker f-sticker-2">✨</div>
+          <div class="floating-sticker f-sticker-3">🦋</div>
+          <div class="floating-sticker f-sticker-4">💖</div>
+
+          <!-- Envelope 3D structure -->
+          <div class="envelope" id="envelope" role="button" tabindex="0" aria-label="Open Birthday Letter">
+            <div class="envelope-flap" id="envelope-flap"></div>
+            <div class="envelope-pocket"></div>
+            
+            <!-- Envelope Front Label -->
+            <div class="envelope-label-box" id="envelope-label">
+              <div class="stamp-mini">2017 SPECIAL</div>
+              <p class="envelope-to">For my favourite headache – Hanuman ❤️</p>
+              <div class="envelope-tap-prompt">
+                <span class="hand-icon">👆</span>
+                <span>Click to unseal & read</span>
+              </div>
+            </div>
+
+            <!-- Letter Paper hidden inside envelope initially -->
+            <div class="letter-paper" id="letter-paper">
+              <div class="washi-tape-strip tape-lavender tape-center-small"></div>
+              
+              <div class="letter-header">
+                <span class="letter-stamp-circle">MEMORIES DEPT • EST. 2017</span>
+                <span class="letter-date">November 21</span>
+              </div>
+
+              <div class="letter-body" id="letter-body">
+                <!-- EXACT LETTER CONTENT -->
+                <p class="letter-para salutation">Dear Hanuman 😂❤️</p>
+                
+                <p class="letter-para">
+                  Enna solla... innoru birthday vandhuruchu! Vayasum aagite pogudhu, aana un maturity mattum innum loading la dhaan irukku! 😂
+                </p>
+                
+                <p class="letter-para">
+                  School la first meet pannadhu la irundhu ippo varaikkum namma friendship la nadandha comedy, mokka jokes, sanda, secrets, random talks... list potta birthday mudinjidum, list mudiyadhu! 🤣
+                </p>
+                
+                <p class="letter-para">
+                  Enna matter ah irundhaalum share pannura oru person nee. Namma rendu perum evlo kalaaichal pannalum, evlo mokka jokes adichalum, un friendship enakku romba special.
+                </p>
+                
+                <p class="letter-para">
+                  Life la neraya friends kidaikkalaam, aana school memories oda serndhu lifetime ah torture panna oru friend kidaikkuradhu romba rare! Andha rare piece dhaan nee! 😂
+                </p>
+                
+                <p class="letter-para">
+                  Eppovume ipdiye happy ah iru, un dreams ellam achieve pannu. Unakku pudichadhellam kidaikkanum. Aana konjam over scene podradha mattum reduce panniko! 😌
+                </p>
+                
+                <p class="letter-para highlight-para">
+                  Happy Birthday, Hanuman! ❤️
+                </p>
+                
+                <p class="letter-para">
+                  Innum neraya years namma ippadiye sirichu, kalaaichu, sanda pottu, memories create pannanum!
+                </p>
+                
+                <p class="letter-para">
+                  And finally, thanks for being one of my favourite headache! 😂❤️
+                </p>
+                
+                <div class="letter-signature">
+                  <p class="closing">With love,</p>
+                  <p class="sender">Unna vida konjam better friend! 🤣</p>
+                </div>
+              </div>
+
+              <!-- Wax seal / sticker decoration -->
+              <div class="wax-seal">❤️</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Post Letter Next Button -->
+        <div class="post-letter-action hidden" id="post-letter-action">
+          <button id="btn-after-letter" class="btn-floral-magic">
+            <span>Okay, enough sentiment... Next! 😂</span>
+            <span class="btn-arrow">➡️</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PAGE 3: PHOTO SCRAPBOOK (6 INDIVIDUAL DESIGNS)
+         ============================================== -->
+    <section class="page-section" id="page-scrapbook" data-page="3">
+      <div class="scrapbook-page-wrapper">
+        <div class="section-header-box">
+          <div class="section-badge">
+            <span>📖 Our Scrapbook of Memories</span>
+          </div>
+          <h2 class="section-title">Special Chapters of Us ✨</h2>
+          <p class="section-subtitle">Swipe or tap next to view all 6 memory pages!</p>
+        </div>
+
+        <!-- Scrapbook Carousel Controls & Progress -->
+        <div class="scrapbook-view-tabs">
+          <div class="memory-selector" id="memory-selector">
+            <button class="memory-tab active" data-index="0">1. Princess ✨</button>
+            <button class="memory-tab" data-index="1">2. Little Days 🌸</button>
+            <button class="memory-tab" data-index="2">3. School Vibes 🌿</button>
+            <button class="memory-tab" data-index="3">4. Saree Swag 💖</button>
+            <button class="memory-tab" data-index="4">5. Twirl Queen 💃</button>
+            <button class="memory-tab" data-index="5">6. Besties Forever ❤️</button>
+          </div>
+        </div>
+
+        <!-- Scrapbook Stage Area -->
+        <div class="scrapbook-stage" id="scrapbook-stage">
+
+          <!-- Card 1 -->
+          <div class="scrapbook-slide active" data-slide="0">
+            <div class="scrapbook-card card-pink">
+              <div class="washi-tape-strip tape-pink tape-tl"></div>
+              <div class="washi-tape-strip tape-gold tape-br"></div>
+              <div class="scrapbook-stamp-tag">HANUMAN HQ • EST. 2017</div>
+              
+              <div class="scrapbook-inner-content">
+                <div class="scrapbook-display-container">
+                  <img src="assets/photos/scrapbook_1.png" alt="Birthday Princess Scrapbook" class="scrapbook-design-img">
+                </div>
+                <div class="scrapbook-meta">
+                  <h3 class="photo-title">The Birthday Princess ✨</h3>
+                  <p class="photo-caption">"The Birthday Queen with unlimited swag and 100% attitude! ❤️"</p>
+                  <div class="photo-tags">
+                    <span class="tag">#BirthdayQueen</span>
+                    <span class="tag">#SpecialHeadache</span>
+                    <span class="tag">#HanumanSwag</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="scrapbook-slide" data-slide="1">
+            <div class="scrapbook-card card-lavender">
+              <div class="washi-tape-strip tape-lavender tape-tl"></div>
+              <div class="washi-tape-strip tape-pink tape-br"></div>
+              <div class="scrapbook-stamp-tag">THROWBACK • ORIGINAL CUTIE</div>
+              
+              <div class="scrapbook-inner-content">
+                <div class="scrapbook-display-container">
+                  <img src="assets/photos/scrapbook_2.png" alt="Little Hanuman Days Scrapbook" class="scrapbook-design-img">
+                </div>
+                <div class="scrapbook-meta">
+                  <h3 class="photo-title">Little Hanuman Days 🌸</h3>
+                  <p class="photo-caption">"Cute exterior, 100% mischievous since day one! Mokka joke specialist in the making 😂"</p>
+                  <div class="photo-tags">
+                    <span class="tag">#Throwback</span>
+                    <span class="tag">#CuteHanuman</span>
+                    <span class="tag">#BornMischievous</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="scrapbook-slide" data-slide="2">
+            <div class="scrapbook-card card-mint">
+              <div class="washi-tape-strip tape-green tape-tl"></div>
+              <div class="washi-tape-strip tape-gold tape-br"></div>
+              <div class="scrapbook-stamp-tag">SCHOOL MEMORIES • RARE PIECE</div>
+              
+              <div class="scrapbook-inner-content">
+                <div class="scrapbook-display-container">
+                  <img src="assets/photos/scrapbook_3.png" alt="Graceful & Mischievous Scrapbook" class="scrapbook-design-img">
+                </div>
+                <div class="scrapbook-meta">
+                  <h3 class="photo-title">Graceful & Mischievous 🌿</h3>
+                  <p class="photo-caption">"School la meet pannadhu la irundhu... namma comedy, mokka jokes, list mudiyadhu! 🤣"</p>
+                  <div class="photo-tags">
+                    <span class="tag">#SchoolMemories</span>
+                    <span class="tag">#UnlimitedTorture</span>
+                    <span class="tag">#RarePiece</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="scrapbook-slide" data-slide="3">
+            <div class="scrapbook-card card-peach">
+              <div class="washi-tape-strip tape-pink tape-tl"></div>
+              <div class="washi-tape-strip tape-lavender tape-br"></div>
+              <div class="scrapbook-stamp-tag">SPECIAL EDITION • 100% DRAMA</div>
+              
+              <div class="scrapbook-inner-content">
+                <div class="scrapbook-display-container">
+                  <img src="assets/photos/scrapbook_4.png" alt="Traditional Saree Swag Scrapbook" class="scrapbook-design-img">
+                </div>
+                <div class="scrapbook-meta">
+                  <h3 class="photo-title">Traditional Saree Swag 💖</h3>
+                  <p class="photo-caption">"Elegance personified... aana konjam over scene podradha mattum koraikkanum! 😌"</p>
+                  <div class="photo-tags">
+                    <span class="tag">#TraditionalLook</span>
+                    <span class="tag">#OverSceneChampion</span>
+                    <span class="tag">#GlowQueen</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="scrapbook-slide" data-slide="4">
+            <div class="scrapbook-card card-lilac">
+              <div class="washi-tape-strip tape-lavender tape-tl"></div>
+              <div class="washi-tape-strip tape-gold tape-br"></div>
+              <div class="scrapbook-stamp-tag">BOLLYWOOD VIBES • MAIN CHARACTER</div>
+              
+              <div class="scrapbook-inner-content">
+                <div class="scrapbook-display-container">
+                  <img src="assets/photos/scrapbook_5.png" alt="Slow-Mo Twirl Queen Scrapbook" class="scrapbook-design-img">
+                </div>
+                <div class="scrapbook-meta">
+                  <h3 class="photo-title">The Slow-Mo Twirl Queen 💃</h3>
+                  <p class="photo-caption">"Cinematic vibes! Life la eppovume ipdiye happy ah iru, un dreams ellam achieve pannu ✨"</p>
+                  <div class="photo-tags">
+                    <span class="tag">#TwirlQueen</span>
+                    <span class="tag">#CinematicVibes</span>
+                    <span class="tag">#MainCharacter</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="scrapbook-slide" data-slide="5">
+            <div class="scrapbook-card card-cream">
+              <div class="washi-tape-strip tape-gold tape-tl"></div>
+              <div class="washi-tape-strip tape-pink tape-br"></div>
+              <div class="scrapbook-stamp-tag">LIFETIME TORTURE • NO REFUNDS</div>
+              
+              <div class="scrapbook-inner-content">
+                <div class="scrapbook-display-container">
+                  <img src="assets/photos/scrapbook_6.png" alt="My Favourite Headache Scrapbook" class="scrapbook-design-img">
+                </div>
+                <div class="scrapbook-meta">
+                  <h3 class="photo-title">Forever My Favourite Headache ❤️</h3>
+                  <p class="photo-caption">"Since 2017: Still tolerating each other and wouldn't trade our friendship for anything! 😂"</p>
+                  <div class="photo-tags">
+                    <span class="tag">#BestFriends</span>
+                    <span class="tag">#LifetimeFriendship</span>
+                    <span class="tag">#HanumanForever</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Scrapbook Carousel Controls -->
+        <div class="scrapbook-nav-controls">
+          <button id="btn-scrap-prev" class="btn-sub-nav">◀ Prev Photo</button>
+          <span class="scrap-counter" id="scrap-counter">1 of 6</span>
+          <button id="btn-scrap-next" class="btn-sub-nav">Next Photo ▶</button>
+        </div>
+
+        <!-- Proceed to Videos Button -->
+        <div class="scrapbook-continue-box">
+          <button id="btn-go-to-videos" class="btn-floral-magic">
+            <span>Watch Hanuman's Video Reels 🎬✨</span>
+            <span class="btn-arrow">➡️</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PAGE 4: VIDEO REELS (3 UPLOADED VIDEOS)
+         ============================================== -->
+    <section class="page-section" id="page-videos" data-page="4">
+      <div class="videos-page-wrapper">
+        <div class="section-header-box">
+          <div class="section-badge">
+            <span>🎬 The Video Premiere</span>
+          </div>
+          <h2 class="section-title">Hanuman In Motion 🌟</h2>
+          <p class="section-subtitle">Real moments, original audio, and 1000% fun!</p>
+        </div>
+
+        <!-- Video Tabs -->
+        <div class="video-tab-bar">
+          <button class="v-tab-btn active" data-v="0">Reel 1: The Vibe ✨</button>
+          <button class="v-tab-btn" data-v="1">Reel 2: The Moments 💫</button>
+          <button class="v-tab-btn" data-v="2">Reel 3: The Sparkle 🎂</button>
+        </div>
+
+        <!-- Video Player Stage -->
+        <div class="video-stage">
+
+          <!-- Video 1 -->
+          <div class="video-card-frame active" data-vcard="0">
+            <div class="washi-tape-strip tape-pink tape-top"></div>
+            <div class="video-player-container">
+              <video class="scrapbook-video" id="video-player-1" playsinline controls preload="metadata">
+                <source src="assets/videos/video_1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-caption-box">
+              <div class="video-tag-pill">REEL 01 • ENERGY LEVEL 100%</div>
+              <h3 class="video-title">The Birthday Star Vibe 🌟</h3>
+              <p class="video-desc">"When Hanuman appears, smiles are guaranteed! Pure joy in every second! 😂❤️"</p>
+            </div>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="video-card-frame" data-vcard="1">
+            <div class="washi-tape-strip tape-lavender tape-top"></div>
+            <div class="video-player-container">
+              <video class="scrapbook-video" id="video-player-2" playsinline controls preload="metadata">
+                <source src="assets/videos/video_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-caption-box">
+              <div class="video-tag-pill">REEL 02 • UNFILTERED FUN</div>
+              <h3 class="video-title">Classic Hanuman Expressions 💫</h3>
+              <p class="video-desc">"No filter, no script – just pure natural comedy & sweet moments! 🤣💖"</p>
+            </div>
+          </div>
+
+          <!-- Video 3 -->
+          <div class="video-card-frame" data-vcard="2">
+            <div class="washi-tape-strip tape-gold tape-top"></div>
+            <div class="video-player-container">
+              <video class="scrapbook-video" id="video-player-3" playsinline controls preload="metadata">
+                <source src="assets/videos/video_3.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="video-caption-box">
+              <div class="video-tag-pill">REEL 03 • BIRTHDAY SPECIAL</div>
+              <h3 class="video-title">The Finale Sparkle ✨</h3>
+              <p class="video-desc">"Here's to celebrating the one and only Nithya Priya – the rare piece! 🎂🥳"</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Video Navigation Buttons -->
+        <div class="video-nav-controls">
+          <button id="btn-v-prev" class="btn-sub-nav">◀ Prev Reel</button>
+          <span class="video-counter" id="video-counter">Reel 1 of 3</span>
+          <button id="btn-v-next" class="btn-sub-nav">Next Reel ▶</button>
+        </div>
+
+        <div class="video-continue-box">
+          <button id="btn-go-to-final" class="btn-floral-magic">
+            <span>Special Final Message ❤️</span>
+            <span class="btn-arrow">➡️</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==============================================
+         PAGE 5: FINAL BIRTHDAY SCREEN
+         ============================================== -->
+    <section class="page-section" id="page-final" data-page="5">
+      <div class="final-celebration-wrapper scrapbook-paper">
+        <!-- Floating decorative elements -->
+        <img src="assets/flowers/flower_sprig.svg" alt="Flower sprig" class="corner-flower top-left">
+        <img src="assets/stickers/butterfly.svg" alt="Butterfly" class="corner-butterfly top-right">
+
+        <div class="final-cake-box">
+          <img src="assets/stickers/cake.svg" alt="Birthday Cake" class="final-cake">
+        </div>
+
+        <div class="final-badge">
+          <span>✨ FOREVER FRIENDSHIP • NO REFUNDS ✨</span>
+        </div>
+
+        <h1 class="final-main-title glow-text">
+          Once again, Happy Birthday, Hanuman! ❤️
+        </h1>
+
+        <p class="final-quote-text">
+          "Keep smiling, keep shining, and never stop being the crazy person you are! 😂"
+        </p>
+
+        <div class="final-summary-card">
+          <div class="washi-tape-strip tape-pink tape-center-small"></div>
+          <p class="summary-line">🌸 Powered by <strong>unlimited mokka jokes</strong></p>
+          <p class="summary-line">💖 School memories with <strong>lifetime torture</strong></p>
+          <p class="summary-line">⭐ <strong>Since 2017</strong> – Still the best headache ever!</p>
+        </div>
+
+        <!-- Interactive Action Buttons -->
+        <div class="final-buttons-group">
+          <button id="btn-replay" class="btn-floral-magic">
+            <span>Replay Our Memories 🔄</span>
+          </button>
+          <button id="btn-hug" class="btn-floral-magic btn-secondary">
+            <span>Send a Birthday Hug 🤗❤️</span>
+          </button>
+        </div>
+
+        <!-- Confetti Toast Message -->
+        <div class="hug-toast" id="hug-toast">
+          ✨ Sending a big birthday hug & lifetime of happiness to Hanuman! 🥳❤️
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Persistent Bottom Navigation Bar -->
+  <footer class="bottom-nav-bar" id="bottom-nav-bar">
+    <button id="nav-btn-prev" class="nav-control-btn" disabled>
+      <span class="nav-btn-icon">◀</span>
+      <span class="nav-btn-text">Previous</span>
+    </button>
+    <div class="nav-dots" id="nav-dots">
+      <span class="dot active" data-page="1" title="Welcome"></span>
+      <span class="dot" data-page="2" title="Letter"></span>
+      <span class="dot" data-page="3" title="Scrapbook"></span>
+      <span class="dot" data-page="4" title="Video Reels"></span>
+      <span class="dot" data-page="5" title="Final Wishes"></span>
+    </div>
+    <button id="nav-btn-next" class="nav-control-btn">
+      <span class="nav-btn-text">Next</span>
+      <span class="nav-btn-icon">▶</span>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
